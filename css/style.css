@@ -2387,9 +2387,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   float: right;
 }
 
-.slick-slide img {
-  display: block;
-}
 
 .slick-slide.slick-loading img {
   display: none;
@@ -4062,7 +4059,9 @@ input::-webkit-search-decoration, input::-webkit-search-cancel-button, input::-w
   position: relative;
   display: grid;
   grid-template-columns: 4fr 4fr 1fr;
-  grid-template-areas: "logo address to-top" "social contact to-top" "blog blog blog";
+  grid-template-areas: "logo address to-top"
+ "social contact to-top"
+ "blog blog blog";
 }
 
 .footer__logo {
