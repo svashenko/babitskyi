@@ -1,62 +1,78 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-SemiBold.woff2') format('woff2'),
-        url('OpenSans-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Regular.woff2') format('woff2'),
-        url('OpenSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Vanchrome Outline';
-    src: url('VanchromeOutline-Regular.woff2') format('woff2'),
-        url('VanchromeOutline-Regular.woff') format('woff');
+    src: url('VanchromeOutline-Regular.eot');
+    src: url('VanchromeOutline-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VanchromeOutline-Regular.woff2') format('woff2'),
+        url('VanchromeOutline-Regular.woff') format('woff'),
+        url('VanchromeOutline-Regular.ttf') format('truetype'),
+        url('VanchromeOutline-Regular.svg#VanchromeOutline-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Bold.woff2') format('woff2'),
-        url('OpenSans-Bold.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.eot');
+    src: url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff'),
+        url('Roboto-Bold.ttf') format('truetype'),
+        url('Roboto-Bold.svg#Roboto-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-ExtraBold.woff2') format('woff2'),
-        url('OpenSans-ExtraBold.woff') format('woff');
-    font-weight: 800;
+    font-family: 'Roboto';
+    src: url('Roboto-Black.eot');
+    src: url('Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff'),
+        url('Roboto-Black.ttf') format('truetype'),
+        url('Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('OpenSans-Light.woff2') format('woff2'),
-        url('OpenSans-Light.woff') format('woff');
+    font-family: 'Roboto';
+    src: url('Roboto-Light.eot');
+    src: url('Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Light.woff2') format('woff2'),
+        url('Roboto-Light.woff') format('woff'),
+        url('Roboto-Light.ttf') format('truetype'),
+        url('Roboto-Light.svg#Roboto-Light') format('svg');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family: 'Oswald';
-    src: url('Oswald-Regular.woff2') format('woff2'),
-        url('Oswald-Regular.woff') format('woff');
+    font-family: 'Vanchrome Outline';
+    src: url('VanchromeOutline-Regular_1.eot');
+    src: url('VanchromeOutline-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('VanchromeOutline-Regular_1.woff2') format('woff2'),
+        url('VanchromeOutline-Regular_1.woff') format('woff'),
+        url('VanchromeOutline-Regular_1.ttf') format('truetype'),
+        url('VanchromeOutline-Regular_1.svg#VanchromeOutline-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype'),
+        url('Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
