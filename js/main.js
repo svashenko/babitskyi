@@ -143,6 +143,14 @@ jQuery(document).ready(function ($) {
     $('.footer').css('margin-top', '0');
   });
 
+  /* history  .history__img img:nth-of-type(5)*/
+  $('.history__mobile-tab').click(function () {
+    $('.history__table :nth-child(n+7)').css('display', 'table-row');
+    $('.history__img').css('display', 'flex');
+    $('.history__img:last-of-type').css('opacity', 'block');
+    $('.history__mobile-tab').css('display', 'none');
+  });
+
   /* about button */
   $('.about__btn-mob').click(function () {
     $('.about__btn-mob').css('display', 'none');
