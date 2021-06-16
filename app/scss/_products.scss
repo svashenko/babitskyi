@@ -1,0 +1,1025 @@
+@import "vars";
+
+
+
+.product {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  height: calc(200px + 480 * ((100vw - 320px) / 1120));
+  text-transform: uppercase;
+
+  &__text {
+    width: 70%;
+    max-height: calc(216px + 453 * ((100vw - 320px) / 1120));
+    padding: 3% 0 0 5%;
+    height: 100%;
+    position: relative;
+  }
+  &__list {
+    margin: 7% 0;
+    font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+    li {
+      margin-bottom: 3%;
+      position: relative;
+      padding-left: 1vw;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: #fff;
+        top: 5px;
+        left: 0;
+      }
+    }
+  }
+  .main-header,
+  .sub-header {
+    padding-bottom: 5vh;
+  }
+  &-btn {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+  }
+  &__logo {
+    display: none;
+  }
+}
+
+.product-presentation {
+  .product__text {
+    padding-top: 22%;
+    padding-left: 2%;
+  }
+  .main-header {
+    color: #fff;
+    padding-bottom: 3%;
+  }
+  .sub-header {
+    margin-left: 10%;
+    color: $gold;
+  }
+  .dots-vert {
+    display: block;
+    width: 3vw;
+    bottom: -4%;
+    left: 36%;
+  }
+  .dots {
+    display: block;
+    width: 7vw;
+    top: 12%;
+    right: 25%;
+  }
+  .cross-big {
+    display: block;
+    width: 15vw;
+    top: 5%;
+    right: 0;
+  }
+  .cross-small {
+    display: block;
+    width: 7vw;
+    top: 40%;
+    right: 20%;
+  }
+  .ring {
+    display: block;
+    border-radius: 50%;
+    border: calc(2px + 10 * ((100vw - 320px) / 1120)) solid $gold;
+    width: 7vw;
+    height: 7vw;
+    top: 15%;
+    right: 40%;
+  }
+}
+
+.product-deposits {
+  .product__text{
+    color: #fff;
+    span{
+      color: $gold;
+    }
+  }
+
+  .dots-vert {
+    display: block;
+    transform: rotate(90deg);
+    top: 25%;
+    right: 10%;
+    width: 6vw;
+  }
+  .ring {
+    display: block;
+    border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
+    border: calc(2px + 10 * ((100vw - 320px) / 1120)) solid $gold;
+    bottom: -25%;
+    left: 50%;
+  }
+}
+
+.product-darium {
+  .main-header {
+    width: calc(140px + 300 * ((100vw - 320px) / 1120));
+    color: #fff;
+  }
+  .sub-header {
+    width: calc(120px + 220 * ((100vw - 320px) / 1120));
+    color: $gold;
+  }
+  .dots-wh {
+    display: block;
+    width: 18vw;
+    bottom: 25%;
+    right: 0%;
+  }
+  .ring {
+    display: block;
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    border: calc(2px + 10 * ((100vw - 320px) / 1120)) solid $gold;
+    top: 0;
+    right: -10%;
+  }
+  .cross-big {
+    display: block;
+    width: 12vw;
+    bottom: 5%;
+    right: 40%;
+  }
+  .media-wrapper img,
+  .media-wrapper video {
+    object-fit: contain;
+  }
+}
+
+.product-groshi {
+  .main-header {
+    width: calc(140px + 300 * ((100vw - 320px) / 1120));
+    color: $gold;
+  }
+  .sub-header {
+    width: calc(150px + 350 * ((100vw - 320px) / 1120));
+    color: #fff;
+  }
+  .dots {
+    display: block;
+    width: 17vw;
+    bottom: 10%;
+    left: 40%;
+  }
+  .cross-big {
+    display: block;
+    width: 11vw;
+    right: -5vw;
+    top: 5%;
+  }
+  .media-wrapper img,
+  .media-wrapper video {
+    object-fit: contain;
+  }
+}
+
+.product-invest {
+  .main-header{
+    color: $gold;
+  }
+  .sub-header{
+    color: #fff;
+  }
+  .dots {
+    display: block;
+    width: 17vw;
+    bottom: 20%;
+    left: 40%;
+  }
+  .cross-big {
+    display: block;
+    width: 11vw;
+    right: 15%;
+    bottom: 25%;
+  }
+}
+
+.product-estate_cred {
+  .main-header{
+    color: $gold;
+  }
+  a {
+    display: none;
+  }
+  .product__text {
+    width: calc(220px + 330 * ((100vw - 320px) / 1120));
+    p {
+      font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+      line-height: 1.4;
+      color: $gold;
+    }
+    .product__list{
+      color: #fff;
+    }
+  }
+  .ring {
+    display: block;
+    border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
+    border: calc(2px + 10 * ((100vw - 320px) / 1120)) solid $gold;
+    bottom: -15%;
+    left: 45%;
+  }
+  .circle {
+    display: block;
+    border-radius: 50%;
+    bottom: 5%;
+    left: 55%;
+    background-color: $gold;
+    width: 5vw;
+    height: 5vw;
+  }
+  .cross-big {
+    display: block;
+    width: 13vw;
+    top: 15%;
+    right: -6%;
+  }
+}
+
+.product-estate {
+  .product__text {
+    width: calc(220px + 330 * ((100vw - 320px) / 1120));
+    color: $gold;
+    p {
+      font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+      line-height: 1.4;
+      color: #fff;
+    }
+  }
+  .cross-big {
+    display: block;
+    width: 16vw;
+    bottom: -25%;
+    left: 40%;
+  }
+  .dots {
+    display: block;
+    width: 14vw;
+    bottom: 15%;
+    right: 0;
+  }
+  .ring {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    top: 15%;
+    right: 0;
+    border-radius: 50%;
+    border: calc(2px + 10 * ((100vw - 320px) / 1120)) solid $gold;
+  }
+}
+
+.media-wrapper {
+  max-height: calc(200px + 453 * ((100vw - 320px) / 1120));
+  max-width: calc(130px + 322 * ((100vw - 320px) / 1120));
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 10;
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.marquee-wrapper{
+  position: absolute;
+  display: block !important;
+  top: 0;
+  left: -2.7%;
+  width: 0;
+  height: 0;	
+  z-index: 100;
+}
+
+.marquee {
+  font-family: "Vanchrome Outline";
+  font-size: calc(30px + 30 * ((100vw - 320px) / 1120));
+  transform: rotate(90deg);
+  font-weight: 100;
+  white-space: nowrap;
+  color: #fff;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;	
+  line-height: 0;
+  display: block !important;  
+  z-index: 100;
+}
+
+@media (max-width: 1200px) {
+  .product-darium .sub-header {
+    width: calc(100px + 220 * ((100vw - 320px) / 1120));
+  }
+  .product-deposits .dots {
+    transform: rotate(0);
+  }
+
+  .product {
+    &-ring {
+      display: none;
+    }
+    &-btn {
+      right: 0;
+      bottom: 5%;
+    }
+    &__text {
+      width: 60%;
+      height: 100vh;
+      padding: 5% 0 0 3%;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .main-header,
+    .sub-header {
+      padding-bottom: 3%;
+    }
+  }
+
+  .product-estate_cred {
+    .ring {
+      width: 10vw;
+      height: 10vw;
+      bottom: -5%;
+      left: 45%;
+    }
+    .circle {
+      bottom: 9%;
+      left: 52%;
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .product-slider .slick-arrow {
+    right: 1%;
+  }
+  .product__list {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+  }
+  .product-estate_cred .product__text p,
+  .product-estate .product__text p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1.2;
+  }
+  .product-presentation .cross-small {
+    top: 30%;
+  }
+  .product-darium .ring {
+    top: -5%;
+    right: -10%;
+  }
+  .product-groshi .cross-big {
+    top: 10%;
+  }
+  .product-estate {
+    .cross-big {
+      width: 12vw;
+      bottom: -10%;
+    }
+    .dots {
+      bottom: 20%;
+    }
+  }
+}
+
+@media (max-width: 999px) {  
+  .product-darium {
+    .main-header {
+      width: calc(170px + 320 * ((100vw - 320px) / 1120));
+    }
+    .sub-header {
+      width: calc(115px + 220 * ((100vw - 320px) / 1120));
+    }
+  }
+  .product-presentation {
+    .product__text {
+      padding-top: 20%;
+      padding-left: 2%;
+    }
+    .main-header {
+      font-size: calc(14px + 17 * ((100vw - 320px) / 1120));
+      padding-bottom: 3%;
+    }
+    .sub-header {
+      font-size: calc(10px + 13 * ((100vw - 320px) / 1120));
+      margin-left: 5%;
+    }
+  }
+  .product-groshi {
+    .dots {
+      bottom: 10%;
+      left: 30%;
+    }
+    .sub-header {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .product-invest .cross-big {
+    bottom: 15%;
+  }
+  .product-estate_cred {
+    .ring {
+      width: 10vw;
+      height: 10vw;
+      bottom: -15%;
+      left: 45%;
+    }
+    .circle {
+      bottom: -3%;
+      left: 52%;
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+
+  .product-estate .product__text {
+    p {
+      font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+      line-height: 1.2;
+    }
+  }
+
+  .product__list {
+    margin: 2% 0;
+    li:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      top: 7px;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .product-presentation .cross-small {
+    top: 35%;
+  }
+
+  .product-deposits {
+    .ring {
+      left: 45%;
+    }
+    .dots-vert {
+      right: 5%;
+    }
+  }
+
+  .product-groshi {
+    .product__text {
+      width: 55%;
+    }
+    .dots {
+      bottom: 5%;
+    }
+  }
+
+  .product-estate {
+    .product__text p {
+      font-size: calc(13px + 2 * ((100vw - 320px) / 1120));
+      line-height: 1.1;
+    }
+    .dots {
+      bottom: 18%;
+    }
+    .cross-big {
+      bottom: -15%;
+    }
+  }
+
+  .product__list li {
+    margin-bottom: 2%;
+  }
+  .product__list {
+    font-size: calc(15px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media (max-width: 750px) {
+  .product-darium {
+    .main-header {
+      width: calc(200px + 320 * ((100vw - 320px) / 1120));
+    }
+    .sub-header {
+      width: calc(130px + 230 * ((100vw - 320px) / 1120));
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .product {
+    .btn {
+      bottom: 2%;
+      padding: .5% 3%;
+      span {
+        font-size: calc(35px + 2 * ((100vw - 320px) / 1120));
+      }
+    }
+    &__list {
+      display: none;
+    }
+    .sub-header {
+      padding-bottom: 1%;
+    }
+  }
+
+  .product-estate_cred .product__text p {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1.2;
+    margin-top: 3%;
+  }
+
+  .product-estate_cred .main-header {
+    color: #fff;
+}
+
+  .product-estate {    
+    .dots {
+      display: none;
+    }
+    .cross-big {
+      bottom: -25%;
+    }
+  }
+
+  .product-estate_cred {
+    a {
+      display: flex;
+      p {
+        display: none;
+      }
+    }
+    button {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .product-estate .dots-vert {
+    display: none;
+  }
+  .product-estate .product__text p {
+    font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 600px) {
+  .marquee-wrapper{    
+    left: -2%;   
+  }
+  .product {
+    .btn {
+      padding: 0 15px;
+      font-size: calc(13px + 2 * ((100vw - 320px) / 1120));
+      span {
+        font-size: calc(22px + 2 * ((100vw - 320px) / 1120));
+        padding-left: 15px;
+      }
+    }
+  }
+  .product-groshi {
+    .sub-header {
+      font-size: calc(10px + 17 * ((100vw - 320px) / 1120));
+      padding-bottom: 2%;
+    }
+    .dots {
+      bottom: -5%;
+    }
+  }
+  .product-invest {
+    .cross-big {
+      bottom: 5%;
+    }
+    .dots {
+      bottom: 5%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .product-estate .product__text p {
+    font-size: calc(11px + 2 * ((100vw - 320px) / 1120));
+  }
+  .marquee-wrapper{    
+    left: 0%;   
+  }
+  .product-deposits .ring {
+    bottom: -30%;
+}
+}
+
+@media (max-width: 480px) {
+  .media-wrapper {
+    min-height: 62%;
+    min-width: 80%;
+    margin-top: 0;
+    margin-left: -2%;
+    img,
+    video {
+      object-fit: cover;
+    }
+  }  
+
+  .product-slider {
+    .slick-slide,
+    .product {
+      height: calc(760px + 650 * ((100vw - 320px) / 1120));
+    }
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 10%;
+    position: relative;
+    &__text {
+      width: 100%;
+      padding: 0 2% 15% 10%;
+      margin: 10% 0;
+      height: auto;      
+    }
+    .btn {
+      bottom: 2%;
+      right: 7%;
+    }
+    .sub-header {
+      font-size: calc(15px + 17 * ((100vw - 320px) / 1120));
+      line-height: 1.1;
+    }
+    &__logo {
+      display: block;
+      position: absolute;
+      top: -1.6%;
+      right: 1%;
+      transform: translate(40%, 280%) rotate(90deg);
+      width: 90%;
+    }
+    .main-header,
+    .sub-header {
+      padding-bottom: 2%;
+    }
+  }
+
+  .product-presentation {
+    .product__text {
+      padding-top: 10%;
+      padding-left: 10%;
+    }
+    .main-header {
+      font-size: calc(18px + 17 * ((100vw - 320px) / 1120));    
+      color: $gold;  
+    }
+    .sub-header {
+      margin-left: 0;
+      padding-left: 5%;
+      color: #fff;
+    }    
+    .mob-ring {
+      display: block;
+      width: 35vw;
+      height: 35vw;
+      border-radius: 50%;
+      border: solid 10px $gold;
+      bottom: 20%;
+      right: -25%;
+    }
+    .mob-cross-big {
+      display: block;
+      bottom: 25%;
+      right: 40%;
+      width: 20vw;
+    }
+    .mob-cross-small {
+      display: block;
+      bottom: -10%;
+      left: 10%;
+      width: 12vw;
+    }
+    .mob-dots-vert {
+      display: block;
+      right: 18%;
+      bottom: 35%;
+      width: 5vw;
+      z-index: -1;
+    }
+  }
+
+  .product-deposits {
+    .product__text p {
+      padding: 2% 0 0 20%;
+      line-height: 1.3;
+    }
+    .mob-cross-big {
+      display: block;
+      bottom: 10%;
+      right: -10%;
+      width: 20vw;
+    }
+    .mob-cross-small {
+      display: block;
+      bottom: -0;
+      left: 10%;
+      width: 12vw;
+    }
+    .mob-dots {
+      display: block;
+      bottom: 34%;
+      right: 15%;
+      width: 40%;
+    }    
+  }
+
+  .product-darium {
+    .main-header {
+      width: calc(240px + 300 * ((100vw - 320px) / 1120));
+      color: $gold;
+    }
+    .sub-header {
+      width: calc(180px + 280 * ((100vw - 320px) / 1120));
+      color: #fff;
+    }
+    .mob-dots {
+      display: block;
+      bottom: 35%;
+      left: 70%;
+      width: 40%;
+    }
+    .mob-cross-small {
+      display: block;
+      bottom: -10%;
+      left: 10%;
+      width: 12vw;
+    }
+    .mob-ring {
+      display: block;
+      width: 35vw;
+      height: 35vw;
+      border-radius: 50%;
+      border: solid 10px $gold;
+      bottom: 0;
+      right: -20%;
+    }    
+  }
+
+  .product-groshi {
+    .main-header {
+      width: calc(190px + 300 * ((100vw - 320px) / 1120));
+    }
+    .sub-header {
+      width: calc(250px + 350 * ((100vw - 320px) / 1120));
+      margin-bottom: 3%;
+    }
+    .mob-ring {
+      display: block;
+      width: 35vw;
+      height: 35vw;
+      right: -25%;
+      border-radius: 50%;
+      border: 10px solid $gold;
+      bottom: 10%;
+    }
+    .mob-dots {
+      display: block;
+      bottom: 40%;
+      left: 2%;
+      width: 40%;
+    }
+    .mob-cross-big {
+      display: block;
+      bottom: -8%;
+      left: 10%;
+      width: 15vw;
+    }
+    .mob-cross-small {
+      display: block;
+      top: 20%;
+      left: 10%;
+      width: 10vw;
+    }
+  }
+
+  .product-invest {
+    .mob-cross-big {
+      display: block;
+      bottom: -5%;
+      left: 15%;
+      width: 20vw;
+    }
+    .mob-dots {
+      display: block;
+      bottom: 31%;
+      left: 2%;
+      width: 40%;
+    }
+    .mob-cross-small {
+      display: block;
+      bottom: -3%;
+      right: 10%;
+      width: 12vw;
+    }
+    .mob-ring {
+      display: block;
+      width: 20vw;
+      height: 20vw;
+      border-radius: 50%;
+      border: solid 5px $gold;
+      bottom: 25%;
+      right: -15%;
+    }
+  }
+
+  .product-estate_cred {    
+    .product__text {
+      width: 100%;
+    }
+    p {
+      color: #fff;
+    }
+
+    .mob-ring {
+      display: block;
+      width: 20vw;
+      height: 20vw;
+      border-radius: 50%;
+      border: solid 5px $gold;
+      bottom: 27%;
+      right: -8%;
+    }
+    .mob-cross-big {
+      display: block;
+      bottom: -3%;
+      right: 15%; 
+      width: 20vw;
+    }
+    .mob-dots {
+      display: block;
+      bottom: 30%;
+      left: 2%;
+      width: 40%;
+    }
+    .mob-dots-wh {
+      display: block;
+      bottom: 5%;
+      right: 15%;
+      width: 40%;
+    }
+    .mob-cross-small {
+      display: block;
+      bottom: -10%;
+      left: 10%;
+      width: 12vw;
+    }
+  }
+
+  .product-estate {
+    .mob-cross-small {
+      display: block;
+      bottom: 20%;
+      right: -2%;
+      width: 12vw;
+      z-index: 20;
+    }
+    .mob-cross-big {
+      display: block;
+      bottom: 30%;
+      left: 55%;
+      width: 20vw;
+      z-index: 20;
+    }
+    .mob-dots {
+      display: block;
+      bottom: 34%;
+      left: 2%;
+      width: 40%;
+    }
+    .mob-ring {
+      display: block;
+      width: 20vw;
+      height: 20vw;
+      border-radius: 50%;
+      border: solid 5px $gold;
+      bottom: -5%;
+      left: -13%;
+    }
+    .product__text {
+      width: 100%;
+      margin-bottom: 10%;
+      p {
+        font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+        line-height: 1.2;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+  .product-estate_cred .product__text p,
+  .product-estate .product__text p {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 400px) {
+  .marquee-wrapper{    
+    left: 1.5%;   
+  }
+  .product-estate_cred .circle {
+    bottom: 4.5%;
+    left: 18%;
+    background-color: $gold;
+    width: 5vw;
+    height: 5vw;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-presentation {
+    p {
+      padding: 0.5vh 0 0 20%;
+    }
+    .mob-cross-small{
+      bottom: -15%;
+    }
+  }
+
+  .product-deposits {   
+    .mob-cross-small{
+      bottom: -7%;
+    }
+    .mob-cross-big{
+      right: -15%;
+    }
+  }
+
+  .product-darium {   
+    .mob-cross-small{
+      bottom: -15%;
+    }   
+  }
+
+  .product-invest .mob-cross-small{
+    bottom: -10%;
+  }
+
+  .product-estate_cred {
+    .mob-cross-big{
+      bottom: -3%;
+      width: 12vw;
+    }
+    .mob-cross-small{
+      bottom: -17%;
+      width: 18vw;
+    }
+  }
+
+  .product-estate .product__text p {
+    font-size: calc(11px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 350px) {
+  .product-invest {
+    .mob-cross-small{
+      bottom: -13%;
+    }
+    .mob-cross-big{
+      bottom: -10%;
+    }
+  }
+}

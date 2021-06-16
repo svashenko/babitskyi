@@ -1,0 +1,223 @@
+@import "vars";
+@import "mixins";
+
+.header {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  li {
+    font-size: calc(8px + 5 * ((100vw - 320px) / 1120));
+    font-weight: 600;
+    text-transform: uppercase;
+    a {
+      color: $blue;
+      transition: color 0.4s;
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+}
+
+.main-menu {
+  width: 8vw;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+
+  li {
+    writing-mode: vertical-lr;
+    color: $blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+  }
+  .active {
+    color: $gold;
+  }
+  li:last-child {
+    writing-mode: horizontal-tb;
+    position: absolute;
+    bottom: 2%;
+  }
+  .language-switch {
+    cursor: pointer;
+    transition: color 0.4s;
+    color: $blue;
+  }
+  .language-switch:hover {
+    color: $gold;
+  }
+}
+
+.sub-menu {
+  position: relative;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3vw;
+  z-index: 99;
+  transition: background-color 0.5s ease-in-out;
+  li {
+    margin-right: 20px;
+    transition: all 0.5s;
+    transform: translateX(100vw);
+    opacity: 0;
+    a {
+      color: $blue;
+    }
+  }
+  .visible {
+    transform: translateX(0);
+    position: relative;
+    opacity: 1;
+    display: block;
+  }
+  li:last-child {
+    margin-right: 6%;
+  }
+}
+
+.sub-menu__btn-wrapper{
+  z-index: 100;
+  width: 8vw;
+  height: 5vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sub-menu__btn {
+  width: calc(20px + 5 * ((100vw - 320px) / 1120));
+  height: calc(20px + 5 * ((100vw - 320px) / 1120));
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  transform: translateX(50%);
+  span {
+    position: absolute;
+    background-color: $blue;
+    width: calc(1px + 1 * ((100vw - 320px) / 1120));
+    transition: transform 0.7s;
+  }
+  &:hover span {
+    background-color: $gold;
+  }
+  span:first-child {
+    height: calc(8px + 2 * ((100vw - 320px) / 1120));
+    right: 18px;
+  }
+  span:last-child {
+    height: calc(15px + 2 * ((100vw - 320px) / 1120));
+    right: 10px;
+  }
+  .burger:first-child {
+    transform: rotate(-45deg);
+    height: calc(20px + 2 * ((100vw - 320px) / 1120));
+    right: 15px;
+    background-color: $gold;
+  }
+  .burger:last-child {
+    transform: rotate(45deg);
+    height: calc(20px + 2 * ((100vw - 320px) / 1120));
+    right: 15px;
+    background-color: $gold;
+  }
+}
+
+.sub-menu-bg {
+  background-color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 1s ease-in-out;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  li {
+    flex: 1 0 auto;
+    font-weight: 900;
+    color: $blue;
+    font-size: calc(16px + 5 * ((100vw - 320px) / 1120));
+  }
+  li:last-child {
+    display: block;
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+  }
+  &__btn {
+    display: none;
+    width: calc(40px + 15 * ((100vw - 320px) / 1120));
+    height: calc(40px + 15 * ((100vw - 320px) / 1120));
+    cursor: pointer;
+    position: fixed;
+    top: 4%;
+    right: 1%;
+    transform: translateY(-50%);
+    background: #fff;
+    z-index: 101;
+    border-radius: 10px;
+    span {
+      position: absolute;
+      background-color: $blue;
+      width: 2px;
+      transition: transform 0.7s;
+      top: 30%;
+    }
+    &:hover span {
+      background-color: $gold;
+    }
+  }
+  &__btn span:first-child {
+    height: calc(12px + 2 * ((100vw - 320px) / 1120));
+    right: 60%;
+  }
+  &__btn span:last-child {
+    height: calc(20px + 2 * ((100vw - 320px) / 1120));
+    right: 35%;
+  }
+  &__btn .burger:first-child {
+    transform: rotate(-45deg);
+    height: calc(25px + 2 * ((100vw - 320px) / 1120));
+    background-color: $gold;
+    right: 19px;
+  }
+  &__btn .burger:last-child {
+    transform: rotate(45deg);
+    height: calc(25px + 2 * ((100vw - 320px) / 1120));
+    background-color: $gold;
+    right: 19px;
+  }
+}
+
+.mobile-menu-bg {
+  position: relative;
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}

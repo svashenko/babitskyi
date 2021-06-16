@@ -1,0 +1,348 @@
+@import "vars";
+@import "mixins";
+
+.team {
+  position: relative;
+  width: 92vw;
+  .section-header {
+    text-align: center;
+    margin: 5vh 0 2vh;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+.member {
+  width: calc((100% / 5) - 10px);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+  margin-bottom: 5%;
+  background: #fff;
+  border-radius: 50%;
+  &__photo {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    z-index: 3;
+    position: relative;
+  }
+  &__photo-black {
+    width: 70%;
+  }
+  &__photo-color {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &__name,
+  &__position {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__desc {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    font-size: calc(11px + 2 * ((100vw - 320px) / 1120));
+    line-height: 1;
+    &-inner {
+      transform: translateY(-110%);
+      transition: transform 0.3s ease-in-out;
+    }
+    span {
+      display: block;
+      font-weight: 900;
+    }
+    p {
+      margin-bottom: 2%;
+      font-weight: 400;
+    }
+  }
+  &:hover .member__photo-color {
+    opacity: 1;
+  }
+}
+
+.team__mobile-tab{
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+
+.member:nth-child(1):hover ~ .member:nth-child(6),
+.member:nth-child(2):hover ~ .member:nth-child(7),
+.member:nth-child(3):hover ~ .member:nth-child(8),
+.member:nth-child(4):hover ~ .member:nth-child(9),
+.member:nth-child(5):hover ~ .member:last-child {
+  transform: translateY(200%);
+}
+
+.member:hover {
+  .member__name,
+  .member__position {
+    opacity: 0;
+    transform: translateY(-500%);
+  }
+  .member__desc {
+    background: #fff;
+    margin-top: -30px;
+    &-inner {
+      transform: translateY(0);
+    }
+  }
+}
+.member:nth-child(n + 6):hover {
+  transform: translateY(-110%);
+}
+.member:nth-child(n + 6) {
+  margin-bottom: 10%;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1100px) {
+  .member:nth-child(-n + 5) {
+    margin-bottom: 15%;
+  }
+  .member:nth-child(n + 6):hover {
+    transform: translateY(-145%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .member:nth-child(n + 6):hover {
+    transform: translateY(-150%);
+  }
+}
+
+@media (max-width: 900px) {
+  .member:nth-child(1):hover ~ .member:nth-child(6),
+  .member:nth-child(2):hover ~ .member:nth-child(7),
+  .member:nth-child(3):hover ~ .member:nth-child(8),
+  .member:nth-child(4):hover ~ .member:nth-child(9),
+  .member:nth-child(5):hover ~ .member:last-child {
+    transform: translateY(250%);
+  }
+  .member:nth-child(-n + 5),
+  .member:nth-child(n + 6) {
+    margin-bottom: 20%;
+  }
+  .member:nth-child(n + 6):hover {
+    transform: translateY(-200%);
+  }
+}
+
+@media (max-width: 800px) {
+  .team {
+    .member__desc {
+      font-size: calc(10px + 2 * ((100vw - 320px) / 1120));
+    }
+    .member__name,
+    .member__position {
+      font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+    }
+  }
+  .member:nth-child(n + 6):hover {
+    transform: translateY(-170%);
+  }
+  .member:nth-child(-n + 5),
+  .member:nth-child(n + 6) {
+    margin-bottom: 17%;
+  }
+}
+
+@media (max-width: 768px) {
+  .member:hover {
+    .member__desc {
+      margin-top: -30px;
+    }
+  }
+}
+
+@media (max-width: 767px) { 
+  .team .member {
+    width: calc((100% / 2) - 20px);
+  }
+  .member:nth-child(n +5){
+    opacity: 0;
+  }
+  .team .section-header {
+    padding: 5% 0 10%;
+  }
+  .member:nth-child(1):hover ~ .member:nth-child(6),
+  .member:nth-child(2):hover ~ .member:nth-child(7),
+  .member:nth-child(3):hover ~ .member:nth-child(8),
+  .member:nth-child(4):hover ~ .member:nth-child(9),
+  .member:nth-child(5):hover ~ .member:last-child {
+    transform: translateY(0);
+  }
+  .member:nth-child(1):hover ~ .member:nth-child(3),
+  .member:nth-child(2):hover ~ .member:nth-child(4),
+  .member:nth-child(3):hover ~ .member:nth-child(5),
+  .member:nth-child(4):hover ~ .member:nth-child(6),
+  .member:nth-child(5):hover ~ .member:nth-child(7),
+  .member:nth-child(6):hover ~ .member:nth-child(8),
+  .member:nth-child(7):hover ~ .member:nth-child(9),
+  .member:nth-child(8):hover ~ .member:last-child {
+    transform: translateY(65%);
+  }
+  .member:nth-child(n + 6):hover {
+    transform: translateY(0);
+  }
+  .member:nth-child(9):hover,
+  .member:last-child:hover {
+    transform: translateY(-65%);
+  }
+  .member:hover {
+    .member__desc {
+      margin-top: -35px;
+      height: 100vh;
+      font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+    }
+  }
+ 
+  
+}
+
+@media (max-width: 650px) {
+  .member:nth-child(9),
+  .member:last-child {
+    margin-bottom: 20%;
+  }
+  .member:hover {
+    .member__desc {
+      margin-top: -40px;
+      font-size: calc(13px + 2 * ((100vw - 320px) / 1120));
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .member:nth-child(1):hover ~ .member:nth-child(3),
+  .member:nth-child(2):hover ~ .member:nth-child(4),
+  .member:nth-child(3):hover ~ .member:nth-child(5),
+  .member:nth-child(4):hover ~ .member:nth-child(6),
+  .member:nth-child(5):hover ~ .member:nth-child(7),
+  .member:nth-child(6):hover ~ .member:nth-child(8),
+  .member:nth-child(7):hover ~ .member:nth-child(9),
+  .member:nth-child(8):hover ~ .member:last-child {
+    transform: translateY(85%);
+  }
+  .member:nth-child(9):hover,
+  .member:last-child:hover {
+    transform: translateY(-80%);
+  }
+  .member .member__desc p {
+    margin-bottom: 1%;
+  }
+}
+
+@media (max-width: 520px) {
+  .member:nth-child(-n + 5), .member:nth-child(n + 6) {
+    margin-bottom: 27%;
+}
+  .member:nth-child(9),
+  .member:last-child{
+    margin-bottom: 25%;
+  }
+  .member:nth-child(9):hover,
+  .member:last-child:hover {
+    transform: translateY(-100%);
+  }
+}
+
+@media(max-width: 500px){
+  .member:nth-child(1):hover ~ .member:nth-child(3),
+  .member:nth-child(2):hover ~ .member:nth-child(4),
+  .member:nth-child(3):hover ~ .member:nth-child(5),
+  .member:nth-child(4):hover ~ .member:nth-child(6),
+  .member:nth-child(5):hover ~ .member:nth-child(7),
+  .member:nth-child(6):hover ~ .member:nth-child(8),
+  .member:nth-child(7):hover ~ .member:nth-child(9),
+  .member:nth-child(8):hover ~ .member:last-child {
+    transform: translateY(95%);
+  }
+}
+
+@media(max-width: 470px){
+  .member:nth-child(n + 3){
+    opacity: 0;
+  }
+  .team .member {
+    width: calc(100% - 30px);
+  }
+  .member:nth-child(1):hover ~ .member:nth-child(3),
+  .member:nth-child(2):hover ~ .member:nth-child(4),
+  .member:nth-child(3):hover ~ .member:nth-child(5),
+  .member:nth-child(4):hover ~ .member:nth-child(6),
+  .member:nth-child(5):hover ~ .member:nth-child(7),
+  .member:nth-child(6):hover ~ .member:nth-child(8),
+  .member:nth-child(7):hover ~ .member:nth-child(9),
+  .member:nth-child(8):hover ~ .member:last-child {
+    transform: translateY(0);
+  }
+  .member:hover + .member{
+    transform: translateY(55%);
+  }
+  .member:hover {
+    .member__desc {
+      font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+    }
+  }
+  .member:nth-child(9):hover{
+    transform: translateY(0);
+  }
+  .member:last-child:hover{
+    transform: translateY(-70%);
+  }
+  .member:nth-child(-n + 5), .member:nth-child(n + 6) {
+    margin-bottom: 10%;
+}
+  .member:nth-child(9),
+  .member:last-child {
+    margin-bottom: 10%;
+  }
+}
+
+@media(max-width: 420px){
+  .member:hover + .member{
+    transform: translateY(75%);
+  }
+  .member:last-child:hover{
+    transform: translateY(-75%);
+  }
+}
+
+@media(max-width: 360px){
+  .member:hover + .member{
+    transform: translateY(85%);
+  }
+  .member:last-child:hover{
+    transform: translateY(-85%);
+  }
+}
+
+@media(max-width: 340px){
+  .member:hover + .member{
+    transform: translateY(95%);
+  }
+  .member:last-child:hover{
+    transform: translateY(-95%);
+  }
+}
+
+@media(max-width: 330px){ 
+  .member:last-child:hover{
+    transform: translateY(-100%);
+  }
+}
